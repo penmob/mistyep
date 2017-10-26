@@ -1,0 +1,26 @@
+{
+  "name": "mistyep",
+  "version": "0.1.0",
+  "description": "Catch when tricky or non-standard words are mistyped.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penmob/mistyep.git"
+  },
+  "keywords": [
+    "writing",
+    "type",
+    "mistype",
+    "checker",
+    "typecheck"
+  ],
+  "author": "Penmob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/penmob/mistyep/issues"
+  },
+  "homepage": "https://github.com/penmob/mistyep#readme"
+}
