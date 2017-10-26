@@ -3,6 +3,8 @@ Mistyep
 
 Catch when tricky or non-standard words are ~mistyepd~ mistyped.
 
+DO NOT USE! This is the initial empty version.
+
 ## Installation
 
   `npm install mistyep --save`
