@@ -1,11 +1,12 @@
 'use strict';
 
 /**
- * Adds commas to a number
- * @param {number} number
- * @param {string} locale
- * @return {string}
+ * Checks a word against a given word bank
+ * @param {string} word
+ * @param {string} [wordBank] (optional)
+ * @return {string} Returns the corrected string
  */
-module.exports = function(number, locale) {
-  return number.toLocaleString(locale);
+module.exports = function(word, wordBank) {
+  //  TODO...
+  return word;
 };
