@@ -76,7 +76,7 @@ You can see `mistyep` in action on the [Penmob](https://www.penmob.com) login pa
 
 [penmob.com/login](https://www.penmob.com/login)
 
-![Example GIF](https://imgur.com/JBZICZ5)
+[Example GIF](https://imgur.com/JBZICZ5)
 
 Let me know if you use `mistyep` in your own app, and I'll add it to this page.
 
