@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mistyep - spelling checker for emails and other tricky words</title>
+    <script src="./mistyep.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
+</head>
+<body>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    input {
+        padding: .5rem;
+    }
+    #container {
+        padding-top: 3rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+    #left {
+        width: 45%;
+        float: left;
+        border-right: 1px solid #dfdfdf;
+    }
+    #right {
+        width: 50%;
+        float: right;
+    }
+    #bottom {
+        clear: both;
+        text-align: center;
+        padding: 4em;
+        font-size:1.2rem
+    }
+    #word-bank {
+        padding: 1em;
+        font-size: 1rem;
+        width: 85%;
+    }
+    #corrected-word, #corrected-email {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        background-color: #dfdfdf;
+    }
+    #word-to-correct, #email {
+        width: 80%;
+        margin-bottom: .5rem;
+        font-size: large
+    }
+    .text-caption {
+        font-size: small;
+        color: #888888;
+        margin: 0 0 2rem 0;
+    }
+    button {
+        font-size: 1rem;
+        background: white;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: .75rem;
+        color: #4a4a4a;
+        cursor: pointer;
+        transition: background-color 200ms;
+        margin-bottom:2rem;
+    }
+    button:hover {
+        background: #f9f9f9;
+        transition: background-color 200ms;
+    }
+    @media (max-width: 600px) {
+        #left, #right {
+            float: none;
+            width: 100%;
+            border: none;
+        }
+    }
+</style>
+<div id="container">
+    <section id="left">
+
+        <div>
+            <p>
+                <label>Check email address</label><br/>
+                <input placeholder="example@gmail.com" type="text" id="email"/>
+            </p>
+            <p>
+                <button onclick="checkEmail();">Check email address</button>
+            </p>
+            <p>
+                Corrected email: <span id="corrected-email">______</span>
+            </p>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div>
+            <p>
+                <label>Check custom word</label><br/>
+                <input id="word-to-correct" type="text" placeholder="Type a word here" />
+            </p>
+            <p>
+                <button onclick="checkWord()">Check word</button>
+            </p>
+            <p>
+                Corrected word: <span id="corrected-word">______</span>
+            </p>
+        </div>
+
+    </section>
+    <section id="right">
+        <h2 style="margin-top: 0px;">Custom word bank:</h2>
+        <textarea id="word-bank">ux;stand-up;bae;tbh</textarea>
+        <p class="text-caption">(words should be semicolon-separated)</p>
+    </section>
+    <section id="bottom">
+        <br>
+        <p>
+            This is a light demo for
+            <a href="https://www.npmjs.com/package/mistyep" target="_blank">Mistyep</a>,
+            a package used on
+            <a href="https://www.penmob.com" target="_blank">Penmob's</a> login page.
+        </p>
+    </section>
+</div>
+
+<script>
+    var checkEmail = function() {
+      var email = document.getElementById('email').value;
+      var correctedEmail = '______';
+      if (email) {
+        correctedEmail = theEmail(email);
+      }
+      document.getElementById('corrected-email').innerText = correctedEmail;
+    };
+
+    var checkWord = function() {
+      var wordToCorrect = toLower(document.getElementById('word-to-correct').value);
+      var wordBank = document.getElementById('word-bank').value;
+      if (wordBank) {
+        wordBank = wordBank.split(';').map(toLower);
+      }
+
+      var correctedWord = '______';
+      if (wordToCorrect) {
+        correctedWord = custom(wordToCorrect, wordBank);
+      }
+      document.getElementById('corrected-word').innerText = correctedWord;
+    };
+
+    function toLower(word) {
+      return (typeof word === 'string') ? word.toLowerCase() : word;
+    }
+</script>
+
+</body>
+</html>
