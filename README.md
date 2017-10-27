@@ -3,6 +3,8 @@ Mistyep
 
 Catch when tricky or non-standard words are ~mistyepd~ mistyped.
 
+[Live demo](https://penmob.github.io/mistyep/)
+
 ## Installation
 
   `npm install mistyep --save`
