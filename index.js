@@ -12,7 +12,7 @@ module.exports = {
     return mistyep(word, wordBank);
   },
   /**
-   * Checks an email address against the default email options
+   * Checks an email address for likely validity
    * @param {string} email
    * @param {Object} options (optional) - accepts "customDomains" and "customTLDs" as string arrays
    * @return {string} Returns the corrected email address
@@ -53,7 +53,7 @@ module.exports = {
       (tldPart && tldPart.length >= 3) ? tldPart[2] : '';
 
     var domainSuggestion =
-      (domainPart && domainPart.length < 8) ?
+      (domainPart && domainPart.length < 18) ?
         mistyep(domainPart, DEFAULT_EMAIL_DOMAINS) :
         domainPart;
 
