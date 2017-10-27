@@ -40,6 +40,7 @@ jargon that needs to be spelled right. You can check against your own word list
 with the `custom` method:
 
 ```
+// "standup" is the word you're checking, the following string array is your customized word bank.
 mistyep.custom('standup', ['ux', 'stand-up', 'bae', 'tbh']);
 ```
   
