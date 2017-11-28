@@ -48,7 +48,7 @@ mistyep.custom('standup', ['ux', 'stand-up', 'bae', 'tbh']);
 
 The default email values that `mistyep` checks agains are the following:
 
-Domains: `gmail` | `yahoo` | `aol` | `outlook` | `att` | `msn` | `mchsi` | `comcast` | `live` | `mail` | `ymail` | `googlemail`
+Domains: `gmail` | `yahoo` | `aol` | `outlook` | `att` | `msn` | `mchsi` | `comcast` | `live` | `mail` | `ymail` | `googlemail` | `hotmail`
 
 TLDs: `com` | `co` | `org` | `net` | `info` | `edu` | `gov` | `int` | `mil` | `biz` | `me` | `ly` | `io` | `us` | `co.uk` | `ru` | `mobi`
 
@@ -79,7 +79,7 @@ You can see `mistyep` in action on the [Penmob](https://www.penmob.com) login pa
 
 [Example GIF](https://imgur.com/JBZICZ5)
 
-Let me know if you use `mistyep` in your own app, and I'll add it to this page.
+Let me know (via [email](mailto:hello@penmob.com) or a PR on GitHub) if you use `mistyep` in your own app, and I'll add it to this page.
 
 ## Testing
 

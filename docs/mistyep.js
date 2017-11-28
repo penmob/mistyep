@@ -19,7 +19,7 @@
    */
   var theEmail = function(email, options) {
     // NOTE: these are not comprehensive lists.
-    var DEFAULT_EMAIL_DOMAINS = ['gmail','yahoo','aol','outlook','att','msn','mchsi','comcast','live','mail','ymail','googlemail'];
+    var DEFAULT_EMAIL_DOMAINS = ['gmail','yahoo','aol','outlook','att','msn','mchsi','comcast','live','mail','ymail','googlemail','hotmail'];
     var DEFAULT_EMAIL_TLDS = ['com','co','org','net','info','edu','gov','int','mil','biz','me','ly','io','us','co.uk','ru','mobi'];
 
     if (options) {
