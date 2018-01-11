@@ -19,8 +19,9 @@
    */
   var theEmail = function(email, options) {
     // NOTE: these are not comprehensive lists.
+    // Domains and TLDs sourced from multiple lists of the most common usages in email servers, plus Google's list of gccTLDs.
     var DEFAULT_EMAIL_DOMAINS = ['gmail','yahoo','aol','outlook','att','msn','mchsi','comcast','live','mail','ymail','googlemail','hotmail'];
-    var DEFAULT_EMAIL_TLDS = ['com','co','org','net','info','edu','gov','int','mil','biz','me','ly','io','us','co.uk','ru','mobi'];
+    var DEFAULT_EMAIL_TLDS = ['com','co','org','net','info','edu','gov','int','mil','biz','me','ly','io','us','co.uk','ru','mobi', 'ad', 'as', 'bz', 'cc', 'cd', 'dj', 'fm', 'la', 'ms', 'nu', 'sc', 'sr', 'su', 'tv', 'tk', 'ws', 'eu', 'asia', 'br', 'ca', 'cn', 'de', 'fr', 'in', 'jp', 'ru'];
 
     if (options) {
       if (options.customDomains) {
