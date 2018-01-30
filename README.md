@@ -51,6 +51,7 @@ The default email values that `mistyep` checks against are the following:
 Domains: `gmail` | `yahoo` | `aol` | `outlook` | `att` | `msn` | `mchsi` | `comcast` | `live` | `mail` | `ymail` | `googlemail` | `hotmail`
 
 Common TLDs: `com` | `org` | `net` | `info` | `edu` | `gov` | `int` | `mil` | `biz` | `mobi` | `asia`
+
 Common country code TLDs: `ad` | `as` | `br` | `bz` | `ca` | `cc` | `cd` | `co` | `co.uk` | `cn` | `de` | `dj` | `eu` | `fm` | `fr` | `in` | `io` | `jp` | `la` | `ly` | `me` | `ms` | `nu` | `ru` | `sc` | `sr` | `su` | `tk` | `to` | `tv` | `us` | `ws`     
 
 
