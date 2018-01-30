@@ -1,6 +1,6 @@
 {
   "name": "mistyep",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Catch when tricky or non-standard words are mistyped.",
   "main": "index.min.js",
   "scripts": {
