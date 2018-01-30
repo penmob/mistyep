@@ -46,11 +46,13 @@ mistyep.custom('standup', ['ux', 'stand-up', 'bae', 'tbh']);
   
 ## Email Defaults
 
-The default email values that `mistyep` checks agains are the following:
+The default email values that `mistyep` checks against are the following:
 
 Domains: `gmail` | `yahoo` | `aol` | `outlook` | `att` | `msn` | `mchsi` | `comcast` | `live` | `mail` | `ymail` | `googlemail` | `hotmail`
 
-TLDs: `com` | `co` | `org` | `net` | `info` | `edu` | `gov` | `int` | `mil` | `biz` | `me` | `ly` | `io` | `us` | `co.uk` | `ru` | `mobi`
+Common TLDs: `com` | `org` | `net` | `info` | `edu` | `gov` | `int` | `mil` | `biz` | `mobi` | `asia`
+Common country code TLDs: `ad` | `as` | `br` | `bz` | `ca` | `cc` | `cd` | `co` | `co.uk` | `cn` | `de` | `dj` | `eu` | `fm` | `fr` | `in` | `io` | `jp` | `la` | `ly` | `me` | `ms` | `nu` | `ru` | `sc` | `sr` | `su` | `tk` | `to` | `tv` | `us` | `ws`     
+
 
 Obviously, this is not a complete list. I tried to pick many of the most common values, 
 but you may have a different use-case, serve in a specific country, or serve 
